@@ -1,15 +1,12 @@
 # !/bin/python
 import akshare as ak
-import numpy as np
-import tensorflow as tf
-from tensorflow.keras.layers import Dropout, Dense, GRU
 import datetime
-from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 from lib.GRU_module import GRU_module
-import os
 import matplotlib.pyplot as plt
 import math
+import sys
+import re
 
 def get_data_set(stock_id):
     today_date = datetime.date.today()
